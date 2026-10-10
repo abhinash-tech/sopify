@@ -1,0 +1,1 @@
+"""SOPify backend application."""

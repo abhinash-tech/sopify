@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sopify
+    env: python
+    buildCommand: "npm install && npm run build && pip install -r backend/requirements.txt"
+    startCommand: "cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHONPATH
+        value: backend
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: DATABASE_URL
+        value: sqlite:///./data/sopify.db

@@ -1,0 +1,5 @@
+export default function ManifestoSection() {
+  return (
+    <section className="manifesto-section" id="about"> <div className="section-shell manifesto-grid"> <div className="manifesto-heading"> <div className="eyebrow"><span className="eyebrow-line"></span> LESS CHAOS. MORE CLARITY.</div> <h2>Great work<br />shouldn't depend<br />on <span className="headline-accent">memory.</span></h2> </div> <div className="manifesto-aside"> <p className="manifesto-lead">The best way to do a task shouldn't live in someone's head, a forgotten chat, or an old document.</p> <p>SOPify helps teams capture how work gets done and turn it into a practical, repeatable guide — complete with steps, checklists, responsibilities, and approvals.</p> <a className="text-link text-link-dark" href="#studio">Bring your process to life <span aria-hidden="true">↗</span></a> </div> </div> <div className="manifesto-bottomline"><span>BUILT FOR EVERY TEAM</span><span className="line-pattern"></span><span>DESIGNED FOR EVERYDAY WORK</span></div> </section>
+  );
+}
